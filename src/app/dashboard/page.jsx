@@ -9,7 +9,6 @@ import Image from 'next/image';
 import { SignAuth } from '@/component/Authsign';
 import styles from '../page.module.css'
 import axios from 'axios';
-import { Josefin_Sans } from 'next/font/google';
 
 const Dashboard = () => {
     // const {email,setEmail,pass,setPass} = useContext(SignAuth);
