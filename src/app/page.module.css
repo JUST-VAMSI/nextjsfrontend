@@ -1,0 +1,119 @@
+.bg{
+  background-image: url('../../public/images/Left side.svg');
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: left;
+  min-height: 100vh;
+}
+.social{
+  width:500px;
+  height:40px;
+  margin-left:10px;
+}
+.sideitemsimg{
+  width:20px;
+}
+
+.signoutimage{
+  width:40px;
+  border-radius: 30px;
+}
+
+.revenueimage{
+  width: 30px;
+}
+.chartimg{
+  width: 100px;
+  margin-top: 20px;
+}
+.chartsideimg1{
+  width:80px;
+  margin-top:20px;
+}
+.chartsideimg2{
+  width:120px;
+  margin-top:20px;
+}
+.chartsideimg3{
+  width:100px;
+  margin-top:20px;
+}
+.notification{
+  width: 20px;
+}
+@media (max-width: 768px)
+{
+  .revenueimage{
+    width: 20px;
+  }
+  .notification{
+    width: 14px;
+}
+  
+}
+@media(max-width:998px)
+{
+  .bg{
+    background-image:none;
+  }
+  
+}
+@media (max-width:400px){
+  .goog{
+    width: 150px;
+  }
+  .app{
+    width: 150px;
+  }
+    
+}
+@media (min-width:401px) and (max-width:516px){
+  .goog{
+    width: 200px;
+  }
+  .app{
+    width: 200px;
+  }
+    
+}
+@media (min-width:517px) and (max-width:547px){
+  .goog{
+    width: 220px;
+  }
+  .app{
+    width: 220px;
+  }
+    
+}
+@media (min-width:547px) and (max-width:633px){
+  .goog{
+    width: 250px;
+  }
+  .app{
+    width: 250px;
+  }
+    
+}
+@media (min-width:634px) and (max-width:768px){
+  .goog{
+    width: 300px;
+  }
+  .app{
+    width: 300px;
+  }
+    
+}
+@media (max-width:550px)
+{
+  .sideitemsimg{
+    width:12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+}
+@media (min-width:551px) and (max-width:768px)
+{
+  .sideitemsimg{
+    margin: 20px 0px;
+}
+}
