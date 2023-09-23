@@ -29,7 +29,7 @@ export default function Home() {
   useEffect(()=>{
       axios.get('https://nextbackend-pi.vercel.app/checking')
       .then(res=>{
-        if(res.data.Status == "Success" || session.status === "authenticated")
+        if(res.data.Status === "Success" || session.status === "authenticated")
         {
           router.push('./dashboard');
         }
