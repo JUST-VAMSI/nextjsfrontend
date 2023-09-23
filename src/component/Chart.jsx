@@ -24,7 +24,7 @@ const Chart = () => {
     const [chart,setChart] = useState([]);
 
     useEffect(()=>{
-         axios.get("http://localhost:2002/getallcharts").then((res)=>{
+         axios.get("https://nextbackend-pi.vercel.app/getallcharts").then((res)=>{
             const newData = res.data;
             if(JSON.stringify(newData)!==JSON.stringify(chart))
             {
