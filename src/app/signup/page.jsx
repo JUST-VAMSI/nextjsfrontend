@@ -36,7 +36,7 @@ const {email,password} = values;
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      axios.post("http://localhost:2002/signup",values).then((res)=>{
+      axios.post("https://nextbackend-pi.vercel.app/signup",values).then((res)=>{
         if(res.data === "success")
         {
           setValues({email:'',password:'',authpro:'afsuritothme'});
