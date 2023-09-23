@@ -39,7 +39,7 @@ const Dashboard = () => {
     axios.defaults.withCredentials=true;
 
     useEffect(()=>{
-        axios.get('http://localhost:2002/checking')
+        axios.get('https://nextbackend-pi.vercel.app/checking')
         .then(res=>{
           if(res.data.Status === "Success" || session?.user)
           {
@@ -70,7 +70,7 @@ const Dashboard = () => {
       })
 
       useEffect(()=>{
-        axios.post("http://localhost:2002/modaldata",{email}).then((res)=>{
+        axios.post("https://nextbackend-pi.vercel.app/modaldata",{email}).then((res)=>{
             if(res.data.status === "success")
             {
                 setIsProfile(true);
@@ -98,7 +98,7 @@ const Dashboard = () => {
    const handleModalSubmit=(e)=>{
     e.preventDefault();
     console.log(modalform);
-    axios.post("http://localhost:2002/modalinsert",modalform).then((res)=>{
+    axios.post("https://nextbackend-pi.vercel.app/modalinsert",modalform).then((res)=>{
         if(res.data === "success")
         {
             alert("successfull added");
@@ -112,7 +112,7 @@ const Dashboard = () => {
     };
 
     const handleLogout=(e)=>{
-        axios.get('http://localhost:2002/logout').then((res)=>{
+        axios.get('https://nextbackend-pi.vercel.app/logout').then((res)=>{
           if(res.data.Status === "Success")
           {
             router.push('../');
