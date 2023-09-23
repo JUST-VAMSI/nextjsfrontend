@@ -27,7 +27,7 @@ export default function Home() {
   axios.defaults.withCredentials=true;
 
   useEffect(()=>{
-      axios.get('http://localhost:2002/checking')
+      axios.get('https://nextbackend-pi.vercel.app/checking')
       .then(res=>{
         if(res.data.Status == "Success" || session.status === "authenticated")
         {
@@ -50,7 +50,7 @@ export default function Home() {
     }
     const handleSubmit = async(e) => {
       e.preventDefault();
-      axios.post("http://localhost:2002/login",values).then((res)=>{
+      axios.post("https://nextbackend-pi.vercel.app/login",values).then((res)=>{
         if(res.data === "success")
         {
           alert("login success");
