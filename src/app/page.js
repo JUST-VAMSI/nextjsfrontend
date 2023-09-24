@@ -15,7 +15,6 @@ export default function Home() {
   const router = useRouter();
 
   const session = useSession();
-    console.log(session);
 
   const [values,setValues] = useState({
     email:'',
@@ -35,7 +34,7 @@ export default function Home() {
         }
 
       })
-    },[router,session])
+    })
 
   //   useEffect(()=>{
 
