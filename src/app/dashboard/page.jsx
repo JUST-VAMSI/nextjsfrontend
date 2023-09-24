@@ -142,7 +142,7 @@ const Dashboard = () => {
                         <input type='search' placeholder='search...' className='search'></input>
                     </div>
                     <div className='col col-lg-4 col-md-4 col-sm-4 col-4 sign-text'>
-                        {test == true ?(<button onClick={handleGooLogout} className='signout'><Image alt='..' src={session.user.image} width="100" height="100" className={styles.signoutimage}></Image></button>):(<button className='signout' onClick={handleLogout}>L</button>)}
+                        {test == true ?(<button onClick={handleGooLogout} ><Image alt='..' src={session.user.image} width="100" height="100" className={styles.signoutimage}></Image></button>):(<button className={styles.signoutimage} onClick={handleLogout}>L</button>)}
                     </div>
                 </div>
                 
