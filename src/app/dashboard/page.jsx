@@ -79,7 +79,7 @@ const Dashboard = () => {
                 setIsProfile(false);
             }
         })
-      },[email])
+      })
     // useEffect(()=>{
     //     if(session?.user )
     // {
