@@ -33,7 +33,7 @@ axios.defaults.withCredentials=true;
             
          })
         
-    },[chart])
+    })
     const filterData = chart.filter(item=>item.year===2023);
 
     const chartData={
