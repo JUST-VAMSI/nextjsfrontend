@@ -109,13 +109,20 @@ const Dashboard = () => {
         router.push('../');
     };
 
-    const handleLogout=(e)=>{
-        axios.get('https://nextbackend-pi.vercel.app/logout').then((res)=>{
+    const handleLogout= async(e)=>{
+        try{
+        const res = await axios.post('https://nextbackend-pi.vercel.app/logout',null,{
+            withCredentials:true
+        });
           if(res.data.Status === "Success")
           {
             router.push('../');
           }
-        }).catch(err=>{console.log(err)})
+        }
+        catch(err)
+        {
+            console.log(err);
+        }
       }
       
     
