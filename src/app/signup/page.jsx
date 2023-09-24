@@ -27,7 +27,7 @@ const {email,password} = values;
       if(session.status == "authenticated"){
         router.push('/dashboard');
       }
-    })
+    },[session,router])
 
     const handleValue = (e)=>{
       const {name,value} = e.target;
