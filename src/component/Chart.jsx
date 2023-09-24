@@ -22,7 +22,7 @@ ChartJs.register(
 
 const Chart = () => {
     const [chart,setChart] = useState([]);
-
+axios.defaults.withCredentials=true;
     useEffect(()=>{
          axios.get("https://nextbackend-pi.vercel.app/getallcharts").then((res)=>{
             const newData = res.data;
