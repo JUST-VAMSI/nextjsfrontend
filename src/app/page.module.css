@@ -106,14 +106,13 @@
 @media (max-width:550px)
 {
   .sideitemsimg{
-    width:12px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    width:16px;
+    margin:20px 10px;
 }
 }
 @media (min-width:551px) and (max-width:768px)
 {
   .sideitemsimg{
-    margin: 20px 0px;
+    margin: 20px 10px;
 }
 }
