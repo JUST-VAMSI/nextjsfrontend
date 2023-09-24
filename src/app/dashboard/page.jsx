@@ -138,13 +138,10 @@ const Dashboard = () => {
             </div>
             <div className='col col-lg-5 col-md-5 col-sm-12 col-12'>
                 <div className='row'>
-                    <div className='col col-lg-8 col-md-8 col-sm-8 col-12'>
+                    <div className='col col-lg-8 col-md-8 col-sm-8 col-8'>
                         <input type='search' placeholder='search...' className='search'></input>
                     </div>
-                    <div className='col col-lg-2 col-md-2 col-sm-2 col-6 sign-text'>
-                        <Image src='images/notification.svg' alt='..' className={styles.notification} width="30" height="30"/>
-                    </div>
-                    <div className='col col-lg-2 col-md-2 col-sm-2 col-6 sign-text'>
+                    <div className='col col-lg-4 col-md-4 col-sm-4 col-4 sign-text'>
                         {test == true ?(<button onClick={handleGooLogout} className='signout'><Image alt='..' src={session.user.image} width="100" height="100" className={styles.signoutimage}></Image></button>):(<button className='signout' onClick={handleLogout}>L</button>)}
                     </div>
                 </div>
