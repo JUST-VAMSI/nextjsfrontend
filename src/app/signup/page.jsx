@@ -21,7 +21,6 @@ const {email,password} = values;
   const router = useRouter();
 
   const session = useSession();
-    console.log(session);
 
     useEffect(()=>{
       axios.get('https://nextbackend-pi.vercel.app/checking')
@@ -32,7 +31,7 @@ const {email,password} = values;
         }
 
       })
-    },[session,router])
+    })
 
     const handleValue = (e)=>{
       const {name,value} = e.target;
