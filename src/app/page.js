@@ -51,8 +51,9 @@ export default function Home() {
     const handleSubmit = async(e) => {
       e.preventDefault();
       axios.post("https://nextbackend-pi.vercel.app/login",values).then((res)=>{
-        if(res.data === "success")
+        if(res.data.status === "success")
         {
+          console.log(res.data.tok);
           alert("login success");
           router.push('./dashboard');
         }
