@@ -35,7 +35,7 @@ export default function Home() {
         }
 
       })
-    })
+    },[router,session])
 
   //   useEffect(()=>{
 
