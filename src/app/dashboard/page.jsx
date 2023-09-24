@@ -66,7 +66,7 @@ const Dashboard = () => {
           }
   
         })
-      })
+      },[session,router,modalform])
 
       useEffect(()=>{
         axios.post("https://nextbackend-pi.vercel.app/modaldata",{email}).then((res)=>{
@@ -80,7 +80,7 @@ const Dashboard = () => {
                 console.log("add profile");
             }
         })
-      })
+      },[email])
     // useEffect(()=>{
     //     if(session?.user )
     // {
