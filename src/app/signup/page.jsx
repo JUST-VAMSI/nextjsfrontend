@@ -24,9 +24,14 @@ const {email,password} = values;
     console.log(session);
 
     useEffect(()=>{
-      if(session.status == "authenticated"){
-        router.push('/dashboard');
-      }
+      axios.get('https://nextbackend-pi.vercel.app/checking')
+      .then(res=>{
+        if(res.data.Status === "Success" || session.status === "authenticated")
+        {
+          router.push('./dashboard');
+        }
+
+      })
     },[session,router])
 
     const handleValue = (e)=>{
